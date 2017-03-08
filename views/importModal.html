@@ -1,0 +1,32 @@
+{%- extends "apostrophe-modal:baseSlideable.html" -%}
+{%- import 'apostrophe-ui:components/buttons.html' as buttons -%}
+{% import 'apostrophe-ui:components/fields.html' as fields with context %}
+
+{%- block modalClass -%}
+  apos-pieces-import {{ data.options.name | css }}-import apos-modal-slideable apos-pieces-improve
+{%- endblock -%}
+
+{%- block controls -%}
+  {{ buttons.base('Close', { action: 'cancel' }, 'apos-button--minor apos-pieces-import-cancel') }}
+  {{ buttons.major('Import', { action: 'pubmed-import' }, 'apos-button--major apos-pieces-import-done') }}
+{%- endblock -%}
+
+{%- block label -%}
+  {{ __('Import %s', data.options.pluralLabel) }}
+{%- endblock -%}
+
+{%- block body -%}
+  <form data-pubmed-import-form>
+    {%- for field in data.options.fields -%}
+      {%- if not field.contextual -%}
+        {{ apos.schemas.field(field) }}
+      {%- endif -%}
+    {%- endfor -%}
+  </form>
+  <div class="apos-pubmed-import-status" data-pubmed-import-status></div>
+
+{%- endblock -%}
+
+{%- block instructions -%}
+  Use a Google Spreadsheet to import records from PubMed. The Google Spreadsheet must be made PUBLIC, see here https://support.google.com/docs/answer/37579?hl=en
+{%- endblock -%}

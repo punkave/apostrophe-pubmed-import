@@ -1,0 +1,12 @@
+{#
+This file must be placed in the `views/` directory of the piece subclass being improved
+#}
+
+{%- extends "managerModalBase.html" -%}
+{%- import "piecesMacros.html" as pieces with context -%}
+{%- import 'apostrophe-ui:components/buttons.html' as buttons with context -%}
+
+{%- block controls -%}
+  {{ buttons.minor('Import from PubMed', { action: 'pubmed-import-' + data.options.name }) }}
+  {{ pieces.manageControls() }}
+{%- endblock -%}
