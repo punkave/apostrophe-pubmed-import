@@ -1,6 +1,6 @@
 {
   "name": "apostrophe-pubmed-import",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Import PubMed docs from a Google Spreadsheet via an additional Manager interface on a piece subclass",
   "main": "index.js",
   "scripts": {
