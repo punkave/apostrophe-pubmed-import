@@ -22,7 +22,7 @@ module.exports = {
     return setImmediate(callback);
   },
 
-  construct: function(self, options) { 
+  construct: function(self, options) {
 
     self.pubmedImportAddRoutes = function() {
       require('./lib/routes.js')(self, options);
