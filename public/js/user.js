@@ -13,7 +13,7 @@ apos.define('apostrophe-pieces', {
         self.pubmedImport();
       });
     };
-    
+
     self.pubmedImport = function() {
       return self.getTool('pubmed-import-modal');
     };

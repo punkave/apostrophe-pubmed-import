@@ -23,7 +23,7 @@ apos.define('apostrophe-pieces-pubmed-import-modal', {
             apos.change(self.manager.name);
             $('[data-pubmed-import-status]').text(response.msg).attr('status', response.status)
           });
-          
+
         }
       })
 
@@ -34,17 +34,17 @@ apos.define('apostrophe-pieces-pubmed-import-modal', {
         var error = false;
         var requiredClass = 'apos-error--required';
         var $spreadsheet = self.$form.find('input[name="googleSpreadsheetId"]');
-        
+
         if (!$spreadsheet.val()) {
           $spreadsheet.parent().addClass(requiredClass);
           error = true;
         } else {
           $spreadsheet.parent().removeClass(requiredClass);
         }
-        
+
         return error;
       }
-      
+
       return setImmediate(callback);
     };
   }
