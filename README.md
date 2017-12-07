@@ -38,7 +38,9 @@ modules: {
 
 ## The Google Spreadsheet
 
-The import configuration modal requires you to enter the ID of a PUBLIC Google Spreadsheet.
+The import configuration modal requires you to enter the ID of a PUBLIC Google Spreadsheet. The spreadsheet must be public itself, but also published to the web using the user interface: `File > Publish to the web`. The ID of the "published to the web" version may be different from the ID of the spreadsheet itself. Use the ID from the spreadsheet.
+
+For example, if your spreadsheet URL is https://docs.google.com/spreadsheets/d/2ZVD4_gysdJ0CJ0w5Dq-x9bZmL28OT0Ox_TY8Kn5K41w/edit#gid=0, your ID is `2ZVD4_gysdJ0CJ0w5Dq-x9bZmL28OT0Ox_TY8Kn5K41w`.
 
 Right now the spreadsheet format just cares about a column titled `id` with a list of PMID's. An example spreadsheet can be seen at https://docs.google.com/spreadsheets/d/1HuAxHijAFAzz-XFa5FGRTF6AdJ-HLJuHSCDBSDqr4Xc/pubhtml
 
