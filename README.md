@@ -13,9 +13,12 @@ modules: {
   'my-module-that-extends-pieces': {
     pubmedImport: {
       googleSpreadsheetId: 'o4nfowuenf', // optional, include a spreadsheet ID in the help text
-      mapFields: { 
-        // import map, key is Piece fieldname, value is pubmed document key
-        // full list of keys further down
+      // Import field map
+      mapFields: {
+        // Include a key/value pair for each field importing. This will likely
+        // match the `pubmed.map` object in your piece module, with the id added.
+        // `key` is the piece fieldname, `value` is pubmed document key.
+        // Full list of keys further down.
         'pubmedId' : 'pmid',
       }
     }
@@ -64,7 +67,7 @@ Right now the spreadsheet format just cares about a column titled `id` with a li
   pubtype: [ 'Journal Article' ],
   recordstatus: 'PubMed - in process',
   pubstatus: '4',
-  articleids: 
+  articleids:
    [ { idtype: 'pubmed', idtypen: 1, value: '28277220' },
      { idtype: 'doi',
        idtypen: 3,
@@ -72,7 +75,7 @@ Right now the spreadsheet format just cares about a column titled `id` with a li
      { idtype: 'pii', idtypen: 4, value: '30477' },
      { idtype: 'rid', idtypen: 8, value: '28277220' },
      { idtype: 'eid', idtypen: 8, value: '28277220' } ],
-  history: 
+  history:
    [ { pubstatus: 'received', date: '2016/01/14 00:00' },
      { pubstatus: 'accepted', date: '2016/05/10 00:00' },
      { pubstatus: 'entrez', date: '2017/03/10 06:00' },
