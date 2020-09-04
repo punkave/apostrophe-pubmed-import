@@ -1,6 +1,6 @@
 {
   "name": "apostrophe-pubmed-import",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Import PubMed docs from a Google Spreadsheet via an additional Manager interface on a piece subclass",
   "main": "index.js",
   "scripts": {
@@ -30,10 +30,10 @@
   "homepage": "https://github.com/punkave/apostrophe-pubmed-import#readme",
   "dependencies": {
     "async": "^2.1.5",
-    "google-spreadsheet-to-json": "^0.3.0",
-    "lodash": "^4.17.4",
-    "moment": "^2.18.1",
-    "node-ncbi": "^0.5.0"
+    "google-spreadsheet-to-json": "^1.0.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.27.0",
+    "node-ncbi": "^0.7.0"
   },
   "maintainers": [
     {

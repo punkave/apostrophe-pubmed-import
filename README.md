@@ -112,3 +112,8 @@ Right now the spreadsheet format just cares about a column titled `id` with a li
   year: '2017',
   published: 'March 2, 2017' }
 ```
+
+## Changelog
+
+### 1.0.8 (2020-09-09)
+- Updates dependencies to resolve vulnerability warnings. The major version change for `google-spreadsheet-to-json` lists the only breaking change as "removed user/password auth method," which does not apply to this package.
