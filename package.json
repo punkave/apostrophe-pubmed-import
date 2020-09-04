@@ -31,9 +31,9 @@
   "dependencies": {
     "async": "^2.1.5",
     "google-spreadsheet-to-json": "^0.3.0",
-    "lodash": "^4.17.4",
-    "moment": "^2.18.1",
-    "node-ncbi": "^0.5.0"
+    "lodash": "^4.17.20",
+    "moment": "^2.27.0",
+    "node-ncbi": "^0.7.0"
   },
   "maintainers": [
     {
